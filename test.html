@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mystyle {
+  width: 300px;
+  height: 50px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+}
+
+.newClassName {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<li>
+                            <a href="#" onclick="myFunction()">
+                                <span class="icon" style="font-size: 35px;"><i class="fa fa-address-book"></i></span>
+                                <span class="list">Quản lí người dùng</span>
+                            </a>
+                            <ul class="t2">
+                                <li>
+                                    <a href="#" id="o1">
+                                        <span class="icon" style="font-size: 20px;"><i class="fa fa-cog"></i></span>
+                                        <span class="list">Danh sách nhóm quyền</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" id="o2">
+                                        <span class="icon" style="font-size: 20px;"><i class="fa fa-address-card"></i></span>
+                                        <span class="list">Danh sách nhóm người</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+<script>
+function myFunction() {
+  document.getElementById("o1").classList.toggle("newClassName");
+  document.getElementById("o2").classList.toggle("newClassName");
+}
+</script>
+
+</body>
+</html>

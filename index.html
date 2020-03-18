@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="1.css">
+<!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/HUAN/Downloads/fontawesome-free-5.12.1-web%20(1)/fontawesome-free-5.12.1-web/css/all.css">
+    <!--font awesome-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="1.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top_navbar">
+            <img src="img/logo.png">
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a class="active" href="#hethong">HỆ THỐNG</a></li>
+                <li><a href="kekhai">KÊ KHAI</a></li>
+                <li><a href="quanlisuvu">QUẢN LÍ SỰ VỤ</a></li>
+                <li><a href="baocao">BÁO CÁO THỐNG KÊ</a></li>
+                <li><a href="bienlai">QUẢN LÍ BIÊN LAI</a></li>
+                <li><a href="tracuu">TRA CỨU</a></li>
+            </ul>
+        </div>
+
+
+        <div class="main_body">
+
+            <div class="sidebar_menu">
+              <div class="hamburger1">
+                <div class="inner_hamburger1">
+                    <span class="arrow1">
+                      <div class="left"><i class="fa fa-align-left"></i></div>
+                      <div class="right"><i class="fa fa-align-right"></i></div>
+                    </span>
+                </div>
+              </div>
+
+                <div class="inner_sidebar_menu">
+                    <ul id="t1">
+                        <li>
+                            <a href="#">
+                                <span class="icon" style="font-size: 35px;"><i class="fa fa-users-cog"></i></span>
+                                <span class="list">Danh mục hệ thống</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" onclick="myFunction1()">
+                                <span class="icon" style="font-size: 35px;"><i class="fa fa-address-book"></i></span>
+                                <span class="list">Quản lí người dùng</span>
+                            </a>
+                            <ul class="t2">
+                                <li>
+                                    <a href="#" id="o1">
+                                        <span class="icon" style="font-size: 20px;"><i class="fa fa-cog"></i></span>
+                                        <span class="list">Danh sách nhóm quyền</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" id="o2">
+                                        <span class="icon" style="font-size: 20px;"><i class="fa fa-address-card"></i></span>
+                                        <span class="list">Danh sách nhóm người</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+
+            <div class="container1">
+                <div class="item">
+                  <div class="title">DANH MỤC MẠNG LƯỚI</div>
+                  <div class="search">
+                      <div class="search-container">
+                          <span>Tìm kiếm :</span>
+                          <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"> Tìm kiếm</i></button>
+                          </form>
+                        </div>
+                  </div>
+                      <div class="noidung1">
+                          <ul>
+                              <li>
+                                <span><i class="fa fa-folder"></i><a> 00 - Tổng Công Ty</a></span>
+                                  <ul>
+                                      <li>
+                                          <span><i class="fa fa-folder"></i><a> 10 - Bưu điện TP Hà Nội</a></span>
+                                          <ul>
+                                              <li>
+                                                  <span><i class="fa fa-folder"></i><a> 1155 - Bưu điện Trung tâm 6</a></span>
+                                                  <ul>
+                                                      <li>
+                                                          <span><i class="fa fa-folder"></i><a> 127060 - KHL Hoàng Mai</a></span>
+                                                      </li>
+                                                  </ul>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+            </div>
+            <div class="container2">
+              <div class="item">
+                <div class="title">THÔNG TIN CHI TIẾT</div>
+                    <div class="ctent">
+                        <div class="trai">
+                            <span> Mã : </span>
+                            <span> Địa chỉ : </span>
+                            <span><br></span>
+                            <span> Số điện thoại : </span>
+                            <span> Loại BC : </span>
+                            <span> Cơ quan BHXH : </span>
+                        </div>
+                        
+                        <div class="phai">
+                            <div class="p1">
+                                <input type="text" placeholder="127060">
+                                <span>Tên :</span>
+                                <input type="text" placeholder="KHL Hoàng Mai">
+                            </div>
+
+                            <div class="p2">
+                                <input type="text" placeholder="phường Giáp Bát">
+                                <input type="text" placeholder="Quận Hoàng Mai">
+                                <input type="text"placeholder="TP Hà Nội">
+                            </div>
+
+                            <div class="p3"><input type="text" placeholder="Số 1000 Giải phóng"></div>
+
+                            <div class="p4">
+                                <input type="text">
+                                <span>Số fax :</span>
+                                <input type="text">
+                            </div>
+
+                            <div class="p5">
+                                <input type="text" placeholder="0123456789">
+                                <span>Phương thức :</span>
+                                <input type="text">
+                            </div>
+
+                            <div class="p6"><input type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--main body-->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
