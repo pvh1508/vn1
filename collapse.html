@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1</title>
+    <title>COLLSPASE</title>
     <link rel="stylesheet" href="1.css">
 <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,48 +44,31 @@
 
                 <div class="inner_sidebar_menu">
                     <ul id="t1">
-                        <li>
-                            <a href="#" class="collapsible"> <!---->
-                                <span class="icon" style="font-size: 35px;"><i class="fa fa-address-book"></i></span>
-                                <span class="list">Danh mục hệ thống</span>
-                            </a>
-                              <div class="content"> <!---->
-                                <ul class="t2">
-                                    <li>
-                                        <a href="#" id="o1">
-                                            <span class="icon" style="font-size: 20px;"><i class="fa fa-cog"></i></span>
-                                            <span class="list">Hệ thống</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                              </div>
-
-                        </li>
-
-                        <li>
-                            <a href="#" class="collapsible"> <!---->
-                                <span class="icon" style="font-size: 35px;"><i class="fa fa-address-book"></i></span>
-                                <span class="list">Quản lí người dùng</span>
-                            </a>
-                              <div class="content"> <!---->
-                                <ul class="t2">
-                                    <li>
-                                        <a href="#" id="o1">
-                                            <span class="icon" style="font-size: 20px;"><i class="fa fa-cog"></i></span>
-                                            <span class="list">Danh sách nhóm quyền</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" id="o2">
-                                            <span class="icon" style="font-size: 20px;"><i class="fa fa-address-card"></i></span>
-                                            <span class="list">Danh sách nhóm người</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                              </div>
-                          </li>
-
-                      </ul>
+                      
+                      <li>
+                        <a href="#" class="collapsible"> <!---->
+                            <span class="icon" style="font-size: 35px;"><i class="fa fa-address-book"></i></span>
+                            <span class="list">Quản lí người dùng</span>
+                        </a>
+                          <div class="content"> <!---->
+                            <ul class="t2">
+                                <li>
+                                    <a href="#" id="o1">
+                                        <span class="icon" style="font-size: 20px;"><i class="fa fa-cog"></i></span>
+                                        <span class="list">Danh sách nhóm quyền</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" id="o2">
+                                        <span class="icon" style="font-size: 20px;"><i class="fa fa-address-card"></i></span>
+                                        <span class="list">Danh sách nhóm người</span>
+                                    </a>
+                                </li>
+                            </ul>
+                          </div>
+                      </li>
+                      
+                    </ul>
                 </div>
             </div>
 
@@ -175,24 +158,24 @@
 
 
 
-<!--JS col-->
 
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } 
-      });
-    }
-  </script>
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+          
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+            });
+          }
+        </script>
+
 
 
 
