@@ -43,7 +43,6 @@
 }
 
 
-
 .inner_sidebar_menu ul#t1{
     list-style: none;
     padding-left: 0;
@@ -98,7 +97,9 @@ input{
   .navbar .active {
     background-color: #FF9900;
   }
-
+.navbar .active::after{
+  display: none;
+}
 
 /*
   .wrapper.active .main_body .container{
@@ -311,9 +312,11 @@ input{
 /*
 .active, .collapsible:hover {
   background-color: #555;
-}*/
+}
 
-.collapsible:after {
+*/
+
+.collapsible::after {
   content: '\002B';
   color: black;
   font-weight: bold;
@@ -321,10 +324,10 @@ input{
   margin-left: 60px;
 }
 
-
-.active:after {
+.active::after {
   content: "\2212";
 }
+
 
 .content {
   padding: 0 18px;
@@ -334,7 +337,7 @@ input{
   background-color: #f1f1f1;
 }
 
-.wrapper.active::after{
+.wrapper.active:after{
   display: none;
 }
 .wrapper.active .collapsible::after{
